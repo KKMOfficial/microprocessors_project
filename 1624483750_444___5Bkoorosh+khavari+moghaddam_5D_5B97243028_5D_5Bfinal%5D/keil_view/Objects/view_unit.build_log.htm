@@ -1,0 +1,206 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cyrus Chocolate, ChoclateFactory, LIC=65ISZ-JRGKM-RAEDM-X9946-URX7K-WTXBF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  E:\4_InstalledSoftwares\Keil MDK\Installation\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\projects\microprocessors\keil_view\view_unit.uvprojx
+Project File Date:  06/22/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'E:\4_InstalledSoftwares\Keil MDK\Installation\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_stm32f4xx.c...
+assembling startup_stm32f401xe.s...
+display_unit.c(19): warning: no previous extern declaration for non-static variable 'A_param' [-Wmissing-variable-declarations]
+float A_param = 1;
+      ^
+display_unit.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float A_param = 1;
+^
+display_unit.c(22): warning: no previous extern declaration for non-static variable 'B_param' [-Wmissing-variable-declarations]
+float B_param = 0;
+      ^
+display_unit.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float B_param = 0;
+^
+display_unit.c(25): warning: no previous extern declaration for non-static variable 'Time_Unit' [-Wmissing-variable-declarations]
+uint32_t Time_Unit = 100;
+         ^
+display_unit.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Time_Unit = 100;
+^
+display_unit.c(28): warning: no previous extern declaration for non-static variable 'Set_Parameter_A' [-Wmissing-variable-declarations]
+uint32_t Set_Parameter_A = 1;
+         ^
+display_unit.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Set_Parameter_A = 1;
+^
+display_unit.c(29): warning: no previous extern declaration for non-static variable 'Set_Parameter_B' [-Wmissing-variable-declarations]
+uint32_t Set_Parameter_B = 2;
+         ^
+display_unit.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Set_Parameter_B = 2;
+^
+display_unit.c(30): warning: no previous extern declaration for non-static variable 'Channel_1_Frame' [-Wmissing-variable-declarations]
+uint32_t Channel_1_Frame = 3;
+         ^
+display_unit.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Channel_1_Frame = 3;
+^
+display_unit.c(35): warning: no previous extern declaration for non-static variable 'refresh_buffer_turn' [-Wmissing-variable-declarations]
+int refresh_buffer_turn = 1;
+    ^
+display_unit.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int refresh_buffer_turn = 1;
+^
+display_unit.c(95): warning: implicit conversion from 'uint32_t' (aka 'unsigned int') to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                y[i] = A_param*x[i]+B_param;
+                              ~^~~~
+display_unit.c(113): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                A_param = 10*natural_part+decimal_part;
+                        ~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+display_unit.c(123): warning: implicit conversion from 'unsigned int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                B_param = 10*natural_part+decimal_part;
+                        ~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+display_unit.c(175): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOC->ODR |= 0b00100;
+                      ^
+display_unit.c(176): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOC->ODR &= 0b11101;
+                      ^
+display_unit.c(183): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOC->ODR &= 0b11101;
+                      ^
+display_unit.c(184): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOC->ODR &= 0b11011;
+                      ^
+display_unit.c(193): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOC->ODR |= 0b01000;
+                      ^
+display_unit.c(202): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer0[column][page]);
+                                                     ^~~~~~~
+display_unit.c(202): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer0[column][page]);
+                                                             ^~~~~
+display_unit.c(203): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer0[column][page]<0xFF){
+                                               ^~~~~~~
+display_unit.c(203): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer0[column][page]<0xFF){
+                                                       ^~~~~
+display_unit.c(210): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                GPIOC->ODR &= 0b10111;
+                              ^
+display_unit.c(216): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer0[column][page]);
+                                                     ^~~~~~~
+display_unit.c(216): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer0[column][page]);
+                                                             ^~~~~
+display_unit.c(217): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer0[column][page]<0xFF){
+                                               ^~~~~~~
+display_unit.c(217): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer0[column][page]<0xFF){
+                                                       ^~~~~
+display_unit.c(228): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer1[column][page]);
+                                                     ^~~~~~~
+display_unit.c(228): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer1[column][page]);
+                                                             ^~~~~
+display_unit.c(229): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer1[column][page]<0xFF){
+                                               ^~~~~~~
+display_unit.c(229): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer1[column][page]<0xFF){
+                                                       ^~~~~
+display_unit.c(236): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                GPIOC->ODR &= 0b10111;
+                              ^
+display_unit.c(242): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer1[column][page]);
+                                                     ^~~~~~~
+display_unit.c(242): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                data_out(data_buffer1[column][page]);
+                                                             ^~~~~
+display_unit.c(243): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer1[column][page]<0xFF){
+                                               ^~~~~~~
+display_unit.c(243): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(data_buffer1[column][page]<0xFF){
+                                                       ^~~~~
+display_unit.c(302): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+display_unit.c(33): warning: no previous extern declaration for non-static variable 'data_buffer0' [-Wmissing-variable-declarations]
+uint8_t data_buffer0[128][8];
+        ^
+display_unit.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t data_buffer0[128][8];
+^
+display_unit.c(34): warning: no previous extern declaration for non-static variable 'data_buffer1' [-Wmissing-variable-declarations]
+uint8_t data_buffer1[128][8];
+        ^
+display_unit.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t data_buffer1[128][8];
+^
+36 warnings generated.
+compiling display_unit.c...
+linking...
+Program Size: Code=1776 RO-data=436 RW-data=8 ZI-data=3688  
+FromELF: creating hex file...
+".\Objects\view_unit.axf" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\4_InstalledSoftwares\Keil MDK\Arm Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  E:\4_InstalledSoftwares\Keil MDK\Arm Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F401xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

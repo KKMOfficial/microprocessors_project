@@ -1,0 +1,205 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cyrus Chocolate, ChoclateFactory, LIC=65ISZ-JRGKM-RAEDM-X9946-URX7K-WTXBF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  E:\4_InstalledSoftwares\Keil MDK\Installation\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\projects\microprocessors\keil_sampling\final.uvprojx
+Project File Date:  06/21/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'E:\4_InstalledSoftwares\Keil MDK\Installation\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+sample_unit.c(34): warning: no previous extern declaration for non-static variable 'max_sample' [-Wmissing-variable-declarations]
+int max_sample = 200000;
+    ^
+sample_unit.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int max_sample = 200000;
+^
+sample_unit.c(35): warning: no previous extern declaration for non-static variable 'frame_step' [-Wmissing-variable-declarations]
+int frame_step = 0;
+    ^
+sample_unit.c(35): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int frame_step = 0;
+^
+sample_unit.c(36): warning: no previous extern declaration for non-static variable 'sample_num' [-Wmissing-variable-declarations]
+int sample_num = 0;
+    ^
+sample_unit.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int sample_num = 0;
+^
+sample_unit.c(37): warning: no previous extern declaration for non-static variable 'init_data_counter' [-Wmissing-variable-declarations]
+int init_data_counter = 0;
+    ^
+sample_unit.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int init_data_counter = 0;
+^
+sample_unit.c(40): warning: no previous extern declaration for non-static variable 'A_param' [-Wmissing-variable-declarations]
+float A_param = 1;
+      ^
+sample_unit.c(40): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float A_param = 1;
+^
+sample_unit.c(41): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float A_Change = 0.1;
+      ~~~~~~~~   ^~~
+sample_unit.c(41): warning: no previous extern declaration for non-static variable 'A_Change' [-Wmissing-variable-declarations]
+float A_Change = 0.1;
+      ^
+sample_unit.c(41): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float A_Change = 0.1;
+^
+sample_unit.c(44): warning: no previous extern declaration for non-static variable 'B_param' [-Wmissing-variable-declarations]
+float B_param = 0;
+      ^
+sample_unit.c(44): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float B_param = 0;
+^
+sample_unit.c(45): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+float B_Change = 0.1;
+      ~~~~~~~~   ^~~
+sample_unit.c(45): warning: no previous extern declaration for non-static variable 'B_Change' [-Wmissing-variable-declarations]
+float B_Change = 0.1;
+      ^
+sample_unit.c(45): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float B_Change = 0.1;
+^
+sample_unit.c(48): warning: no previous extern declaration for non-static variable 'time_unit' [-Wmissing-variable-declarations]
+uint32_t time_unit = 156;
+         ^
+sample_unit.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t time_unit = 156;
+^
+sample_unit.c(49): warning: no previous extern declaration for non-static variable 'TU_Change' [-Wmissing-variable-declarations]
+uint32_t TU_Change = 100000;
+         ^
+sample_unit.c(49): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t TU_Change = 100000;
+^
+sample_unit.c(52): warning: no previous extern declaration for non-static variable 'Set_Parameter_A' [-Wmissing-variable-declarations]
+uint32_t Set_Parameter_A = 1;
+         ^
+sample_unit.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Set_Parameter_A = 1;
+^
+sample_unit.c(53): warning: no previous extern declaration for non-static variable 'Set_Parameter_B' [-Wmissing-variable-declarations]
+uint32_t Set_Parameter_B = 2;
+         ^
+sample_unit.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Set_Parameter_B = 2;
+^
+sample_unit.c(54): warning: no previous extern declaration for non-static variable 'Channel_1_Frame' [-Wmissing-variable-declarations]
+uint32_t Channel_1_Frame = 3;
+         ^
+sample_unit.c(54): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t Channel_1_Frame = 3;
+^
+sample_unit.c(166): error: use of undeclared identifier 'Time_Unit'; did you mean 'time_unit'?
+        uint32_t copy = Time_Unit;
+                        ^~~~~~~~~
+                        time_unit
+sample_unit.c(48): note: 'time_unit' declared here
+uint32_t time_unit = 156;
+         ^
+sample_unit.c(186): warning: implicit conversion loses integer precision: 'unsigned int' to 'char' [-Wimplicit-int-conversion]
+        LCD_data((uint32_t)((A_param-(float)(uint32_t)A_param)*10)+'0');
+        ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+sample_unit.c(206): warning: implicit conversion loses integer precision: 'unsigned int' to 'char' [-Wimplicit-int-conversion]
+        LCD_data((uint32_t)((B_param-(float)(uint32_t)B_param)*10)+'0');
+        ~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+sample_unit.c(253): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOB->ODR |= 0b100;
+                      ^
+sample_unit.c(256): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        GPIOB->ODR &= 0b011;
+                      ^
+sample_unit.c(266): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        ADC1->CR2 &= 0b1111111111111110;        // enable ADC without power saving time
+                     ^
+sample_unit.c(357): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                GPIOB->ODR |= 0b001;
+                              ^
+sample_unit.c(359): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                GPIOB->ODR = 0b101;
+                             ^
+sample_unit.c(369): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+                GPIOB->ODR &= 0b100;
+                              ^
+sample_unit.c(444): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        if(sample_num % time_unit == 0 && init_data_counter < 128){
+           ^~~~~~~~~~ ~
+sample_unit.c(445): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'char' [-Wimplicit-int-conversion]
+                init_data[init_data_counter]=ADC1->DR;
+                                            ~~~~~~~^~
+sample_unit.c(453): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        frame_step = 128 / (sample_num / time_unit);
+                            ^~~~~~~~~~ ~
+sample_unit.c(32): warning: no previous extern declaration for non-static variable 'frame_data' [-Wmissing-variable-declarations]
+char frame_data[128];
+     ^
+sample_unit.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char frame_data[128];
+^
+sample_unit.c(33): warning: no previous extern declaration for non-static variable 'init_data' [-Wmissing-variable-declarations]
+char init_data[128];
+     ^
+sample_unit.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char init_data[128];
+^
+28 warnings and 1 error generated.
+compiling sample_unit.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f401xe.s...
+".\Objects\final.axf" - 1 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\4_InstalledSoftwares\Keil MDK\Arm Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  E:\4_InstalledSoftwares\Keil MDK\Arm Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s
+      Source file:   MDK\Device\Source\ARM\STM32F401xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
